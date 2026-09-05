@@ -1,5 +1,6 @@
 import { ArrowUpRight, ExternalLink, FileDown, Github, Linkedin, Mail } from "lucide-react";
 import { useMemo, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { CommandPalette } from "@/components/command-palette";
 import { ContactDialog } from "@/components/contact-dialog";
 import { SiteHeader } from "@/components/site-header";
@@ -26,6 +27,7 @@ function Home() {
       <ContactDialog open={contactOpen} onOpenChange={setContactOpen} />
       <CommandPalette open={cmdOpen} onOpenChange={setCmdOpen} onContact={() => setContactOpen(true)} />
       <ProjectDialog project={active} onOpenChange={(o) => !o && setActive(null)} />
+      <Analytics />
     </div>
   );
 }
