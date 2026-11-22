@@ -40,7 +40,7 @@ export function SiteHeader({
             <kbd className="rounded border border-line px-1 font-mono text-[10px]">⌘K</kbd>
           </button>
           <Button variant="ghost" size="sm" asChild>
-            <a href={profile.resume} download>
+            <a href={profile.resume} download="Aditya-Resume.pdf">
               <FileDown className="size-3.5" />
               Resume
             </a>

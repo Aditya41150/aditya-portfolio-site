@@ -42,7 +42,7 @@ function Hero({ onContact }: { onContact: () => void }) {
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-fg-muted">I build web and mobile products end to end — React and Flutter up front, Node and Express behind them, Solidity when the work is on chain. Looking for a team that cares about the implementation, not just the demo.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button onClick={onContact}><Mail className="size-4" />Start a conversation</Button>
-            <Button variant="ghost" asChild><a href={profile.resume} download><FileDown className="size-4" />Download resume</a></Button>
+            <Button variant="ghost" asChild><a href={profile.resume} download="Aditya-Resume.pdf"><FileDown className="size-4" />Download resume</a></Button>
           </div>
         </div>
         <aside className="rounded-xl border border-line bg-bg-elevated p-5 sm:p-6">
